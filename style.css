@@ -278,12 +278,20 @@ section { padding: 96px 24px; }
 }
 
 .product-img {
-  height: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
+  height: 220px;
+  overflow: hidden;
   position: relative;
+  background: #d4c4b0;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-img img {
+  transform: scale(1.05);
 }
 .product-badge {
   position: absolute;
