@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PilzHof – Frische Speisepilze vom Züchter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">🍄 PilzHof</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#produkte">Produkte</a></li>
+        <li><a href="#bestellen">Bestellen</a></li>
+        <li><a href="#abholung">Abholtermine</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-deco"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Direktvermarktung · Bioqualität</span>
+      <h1>Frische Pilze,<br />direkt vom Hof</h1>
+      <p>Handgezüchtete Speisepilze auf naturbelassenem Holzsubstrat – täglich frisch geerntet und direkt an dich abgegeben.</p>
+      <div class="hero-buttons">
+        <a href="#bestellen" class="btn btn-primary">Jetzt bestellen</a>
+        <a href="#produkte" class="btn btn-outline">Unsere Pilze</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">🍄</div>
+  </section>
+
+  <!-- ===== PRODUKTE ===== -->
+  <section id="produkte">
+    <div class="container">
+      <h2 class="section-title">Unsere Pilze</h2>
+      <p class="section-sub">Täglich frisch geerntet – ohne Pestizide, mit viel Sorgfalt und Leidenschaft.</p>
+
+      <div class="products-grid">
+
+        <!-- Shiitake -->
+        <div class="product-card" data-product="Shiitake">
+          <div class="product-img" style="background:linear-gradient(135deg,#6D4C41,#A0776B);">
+            <span>🍄</span>
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-body">
+            <h3>Shiitake</h3>
+            <p>Intensiv-aromatisch mit würzigem Umami-Geschmack. Perfekt für asiatische Gerichte, Suppen und Risotto.</p>
+            <div class="size-selector">
+              <button class="size-btn active" data-size="250g" data-price="3.90">250 g · 3,90 €</button>
+              <button class="size-btn" data-size="500g" data-price="6.90">500 g · 6,90 €</button>
+            </div>
+            <div class="qty-row">
+              <div class="qty-ctrl">
+                <button class="qty-btn" data-dir="-1">−</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn" data-dir="1">+</button>
+              </div>
+              <button class="btn btn-add">In den Korb</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Austernpilze -->
+        <div class="product-card" data-product="Austernpilze">
+          <div class="product-img" style="background:linear-gradient(135deg,#7B9E7A,#A8C4A6);">
+            <span>🍄</span>
+          </div>
+          <div class="product-body">
+            <h3>Austernpilze</h3>
+            <p>Zart und mild mit leicht nussigem Aroma. Vielseitig in der Küche – ob gebraten, gedünstet oder im Wok.</p>
+            <div class="size-selector">
+              <button class="size-btn active" data-size="250g" data-price="3.50">250 g · 3,50 €</button>
+              <button class="size-btn" data-size="500g" data-price="6.20">500 g · 6,20 €</button>
+            </div>
+            <div class="qty-row">
+              <div class="qty-ctrl">
+                <button class="qty-btn" data-dir="-1">−</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn" data-dir="1">+</button>
+              </div>
+              <button class="btn btn-add">In den Korb</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kräuterseitlinge -->
+        <div class="product-card" data-product="Kräuterseitlinge">
+          <div class="product-img" style="background:linear-gradient(135deg,#9E8B5A,#C4A97A);">
+            <span>🍄</span>
+          </div>
+          <div class="product-body">
+            <h3>Kräuterseitlinge</h3>
+            <p>Fleischig und bissfest mit feinem Pilzaroma. Ideal als Fleischersatz oder für herzhafte Pfannengerichte.</p>
+            <div class="size-selector">
+              <button class="size-btn active" data-size="250g" data-price="4.20">250 g · 4,20 €</button>
+              <button class="size-btn" data-size="500g" data-price="7.50">500 g · 7,50 €</button>
+            </div>
+            <div class="qty-row">
+              <div class="qty-ctrl">
+                <button class="qty-btn" data-dir="-1">−</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn" data-dir="1">+</button>
+              </div>
+              <button class="btn btn-add">In den Korb</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BESTELLEN ===== -->
+  <section id="bestellen">
+    <div class="container">
+      <h2 class="section-title">Online bestellen</h2>
+      <p class="section-sub">Wähle deine Pilze oben aus, fülle das Formular aus und hole deine Bestellung frisch ab.</p>
+
+      <div class="order-layout">
+        <form id="orderForm" class="order-form" novalidate>
+
+          <!-- Warenkorb -->
+          <div class="cart-box">
+            <h4>🛒 Dein Warenkorb</h4>
+            <div id="cartItems">
+              <p class="cart-empty">Noch keine Artikel hinzugefügt.<br />Wähle deine Pilze im Bereich <a href="#produkte">„Unsere Pilze"</a>.</p>
+            </div>
+            <div id="cartTotal" class="cart-total" hidden>
+              Gesamt: <strong id="totalPrice"></strong>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="oName">Name *</label>
+              <input type="text" id="oName" placeholder="Max Mustermann" required />
+            </div>
+            <div class="form-group">
+              <label for="oEmail">E-Mail *</label>
+              <input type="email" id="oEmail" placeholder="max@beispiel.de" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="oPhone">Telefon</label>
+              <input type="tel" id="oPhone" placeholder="+49 123 456789" />
+            </div>
+            <div class="form-group">
+              <label for="oDate">Abholtermin *</label>
+              <select id="oDate" required>
+                <option value="">Bitte wählen …</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="oNote">Anmerkungen</label>
+            <textarea id="oNote" rows="3" placeholder="Besondere Wünsche oder Hinweise …"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Bestellung absenden ✓</button>
+        </form>
+
+        <aside class="order-aside">
+          <div class="info-card">
+            <h4>ℹ️ So funktioniert's</h4>
+            <ol>
+              <li>Pilzsorte &amp; Menge wählen</li>
+              <li>„In den Korb" klicken</li>
+              <li>Formular ausfüllen &amp; Abholtermin wählen</li>
+              <li>Bestellung absenden</li>
+              <li>Bestätigung per E-Mail erhalten</li>
+              <li>Frisch abholen &amp; genießen!</li>
+            </ol>
+          </div>
+          <div class="info-card">
+            <h4>📍 Abholort</h4>
+            <p>Waldstraße 7<br />87629 Pilzhausen</p>
+            <p style="margin-top:.5rem;font-size:.9rem;color:var(--text-muted);">Einfahrt über den Hofweg, Schild „Pilzhofladen" folgen.</p>
+          </div>
+          <div class="info-card">
+            <h4>💳 Bezahlung</h4>
+            <p>Barzahlung oder Überweisung bei Abholung. Keine Vorauszahlung nötig.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABHOLTERMINE ===== -->
+  <section id="abholung">
+    <div class="container">
+      <h2 class="section-title">Abholtermine</h2>
+      <p class="section-sub">Zweimal pro Woche frisch am Hof – keine Vorbestellung nötig für spontane Käufer.</p>
+
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="sched-icon">🌿</div>
+          <div class="sched-day">Donnerstag</div>
+          <div class="sched-time">16:00 – 19:00 Uhr</div>
+          <div class="sched-note">Wöchentlich</div>
+        </div>
+        <div class="schedule-card highlight">
+          <div class="sched-icon">🌟</div>
+          <div class="sched-day">Samstag</div>
+          <div class="sched-time">09:00 – 13:00 Uhr</div>
+          <div class="sched-note">Wöchentlich · Haupttermin</div>
+        </div>
+      </div>
+
+      <div class="upcoming-box">
+        <h3>Nächste Abholtermine</h3>
+        <div id="upcomingList" class="upcoming-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt">
+    <div class="container">
+      <h2 class="section-title">Kontakt</h2>
+      <p class="section-sub">Fragen, Sonderwünsche oder Großbestellungen? Wir freuen uns von dir zu hören.</p>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Adresse</strong>
+              <p>Waldstraße 7<br />87629 Pilzhausen</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <strong>Telefon</strong>
+              <p>08367 12345</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <div>
+              <strong>E-Mail</strong>
+              <p>hallo@pilzhof.de</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">⏰</span>
+            <div>
+              <strong>Abholzeiten</strong>
+              <p>Do 16–19 Uhr &nbsp;·&nbsp; Sa 9–13 Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cName">Name *</label>
+              <input type="text" id="cName" placeholder="Dein Name" required />
+            </div>
+            <div class="form-group">
+              <label for="cEmail">E-Mail *</label>
+              <input type="email" id="cEmail" placeholder="deine@email.de" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cMsg">Nachricht *</label>
+            <textarea id="cMsg" rows="5" placeholder="Deine Nachricht …" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo" style="color:#fff;">🍄 PilzHof</span>
+        <p>Frische Speisepilze direkt vom Züchter.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#produkte">Produkte</a>
+        <a href="#bestellen">Bestellen</a>
+        <a href="#abholung">Abholtermine</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PilzHof Pilzhausen &nbsp;·&nbsp; <a href="#">Impressum</a> &nbsp;·&nbsp; <a href="#">Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <!-- ===== TOAST ===== -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
